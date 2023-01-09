@@ -21,6 +21,8 @@ import { InventoryService } from '@c8y/client';
 import { FormControl, FormBuilder, Validators } from '@angular/forms';
 import { MatTableDataSource } from '@angular/material/table';
 import { GpAssetViewerService } from '../gp-asset-viewer.service';
+import { SELECTION_MODEL_FACTORY } from '@ng-select/ng-select';
+import { DefaultSelectionModelFactory } from './selection-model';
 
 export interface Property {
   id: any;
@@ -37,7 +39,11 @@ export interface DashboardConfig {
 @Component({
   selector: 'lib-gp-asset-overview-config',
   templateUrl: './gp-asset-overview-config.component.html',
-  styleUrls: ['./gp-asset-overview-config.component.css'],
+  styleUrls: ['./../../node_modules/@ng-select/ng-select/themes/default.theme.css','./gp-asset-overview-config.component.css'],
+  encapsulation: ViewEncapsulation.None,
+  providers: [FormBuilder,
+    { provide: SELECTION_MODEL_FACTORY, useValue: DefaultSelectionModelFactory }
+  ],
 })
 
 export class GpAssetViewerConfigComponent implements OnInit, DoCheck {
