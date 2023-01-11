@@ -69,8 +69,8 @@
       <div class="config-accordion" id="isExpandedP1" *ngIf="isExpandedP1">
         <form [formGroup]="p1Props">
           <ng-select [items]="propertiesToDisplay" bindLabel="id" required [multiple]="true" [closeOnSelect]="false"
-            [searchable]="true" placeholder="Select upto 5 properties" (change)="onP1Change()"
-            maxSelectedItems="5" formControlName="p1Props">
+            [searchable]="true" placeholder="Select upto 5 properties" (change)="onP1Change()" maxSelectedItems="5"
+            formControlName="p1Props">
           </ng-select>
         </form>
         <ng-container *ngIf="p1Props.get('p1Props').value?.length > 0">
@@ -112,8 +112,8 @@
       <div class="config-accordion" id="isExpandedP2" *ngIf="isExpandedP2">
         <form [formGroup]="p2Props">
           <ng-select [items]="propertiesToDisplay" bindLabel="id" required [multiple]="true" [closeOnSelect]="false"
-            [searchable]="true" placeholder="Select upto 5 properties" (change)="onP2Change()"
-            maxSelectedItems="5" formControlName="p2Props">
+            [searchable]="true" placeholder="Select upto 5 properties" (change)="onP2Change()" maxSelectedItems="5"
+            formControlName="p2Props">
           </ng-select>
         </form>
         <ng-container *ngIf="p2Props.get('p2Props').value?.length > 0">
@@ -142,7 +142,7 @@
         </ng-container>
       </div>
     </div>
-    
+
     <div class="row col-sm-12">
       <div class="col-sm-4">
         <div class="btn-group device-list-switch-toggle ">
@@ -243,9 +243,11 @@
     <ng-container *ngIf="otherPropList">
       <div *ngFor="let property of config.otherPropList; let i = index" class="mt-10">
         <label>Label </label>
-        <input type="text" class="form-control input-width" placeholder="eg. Position" [(ngModel)]="property.label" required>
+        <input type="text" class="form-control input-width" placeholder="eg. Position" [(ngModel)]="property.label"
+          required>
         <label>Value </label>
-        <input type="text" class="form-control input-width" placeholder="eg. c8y_Position" [(ngModel)]="property.value" required>
+        <input type="text" class="form-control input-width" placeholder="eg. c8y_Position" [(ngModel)]="property.value"
+          required>
         <a class="btn btn-default btn-xs mt-10" (click)="removeProperty(i)">
           <i c8y-icon="minus" class="dlt-c8y-icon-minus"></i>
           Remove
@@ -267,8 +269,7 @@
       <div class="col-sm-12" *ngIf="dashboard.type">
         <div class="col-sm-3">
           <ng-select [items]="deviceTypes" bindLabel="type" [closeOnSelect]="false" [searchable]="true"
-            placeholder="Select Device Type" (change)="addNewRecord(i)" bindValue="type"
-            [(ngModel)]="dashboard.type">
+            placeholder="Select Device Type" (change)="addNewRecord(i)" bindValue="type" [(ngModel)]="dashboard.type">
           </ng-select>
         </div>
         <div class="col-sm-3">
@@ -285,8 +286,8 @@
           </div>
         </div>
         <div class="col-sm-3" *ngIf="!dashboard.withTabGroup">
-          <input type="text" id="tabGroupID{{i}}" class="form-control input-width"
-            placeholder="TabGroup ID(Optional)" [(ngModel)]="dashboard.tabGroupID">
+          <input type="text" id="tabGroupID{{i}}" class="form-control input-width" placeholder="TabGroup ID(Optional)"
+            [(ngModel)]="dashboard.tabGroupID">
         </div>
       </div>
     </div>

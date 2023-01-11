@@ -485,7 +485,7 @@ export class GpAssetViewerComponent implements OnInit, OnDestroy {
             deviceData.other = this.getTheValue(x, this.otherProp.value);
             deviceData.other = JSON.stringify(deviceData.other);
           }
-  
+
           if (element === 'other' && this.getTheValue(x, this.otherProp.value) !== undefined) {
             deviceData.other = this.getTheValue(x, this.otherProp.value);
             deviceData.other = JSON.stringify(deviceData.other);

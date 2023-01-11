@@ -39,7 +39,7 @@ export interface DashboardConfig {
 @Component({
   selector: 'lib-gp-asset-overview-config',
   templateUrl: './gp-asset-overview-config.component.html',
-  styleUrls: ['./../../node_modules/@ng-select/ng-select/themes/default.theme.css','./gp-asset-overview-config.component.css'],
+  styleUrls: ['./../../node_modules/@ng-select/ng-select/themes/default.theme.css', './gp-asset-overview-config.component.css'],
   encapsulation: ViewEncapsulation.None,
   providers: [FormBuilder,
     { provide: SELECTION_MODEL_FACTORY, useValue: DefaultSelectionModelFactory }
@@ -97,7 +97,7 @@ export class GpAssetViewerConfigComponent implements OnInit, DoCheck {
     private invSvc: InventoryService,
     private fb: FormBuilder,
     private deviceListService: GpAssetViewerService,
-    private renderer:Renderer2
+    private renderer: Renderer2
   ) { }
 
   /**
@@ -169,16 +169,16 @@ export class GpAssetViewerConfigComponent implements OnInit, DoCheck {
       { id: 'c8y_Firmware.version', label: 'Firmware version', value: 'c8y_Firmware.version' },
       { id: 'c8y_Firmware.versionIssues', label: 'Firmware verison issues', value: 'c8y_Firmware.versionIssues' },
       { id: 'c8y_Firmware.versionIssuesName', label: 'Firmware issue name', value: 'c8y_Firmware.versionIssuesName' },
-      { id: 'c8y_RequiredAvailability.responseInterval', label: 'Required availability', value: 'c8y_RequiredAvailability.responseInterval'},
+      { id: 'c8y_RequiredAvailability.responseInterval', label: 'Required availability', value: 'c8y_RequiredAvailability.responseInterval' },
       { id: 'creationTime', label: 'Creation time', value: 'creationTime' },
       { id: 'lastUpdated', label: 'Last updated', value: 'lastUpdated' },
       { id: 'deviceExternalDetails.externalId', label: 'External id', value: 'deviceExternalDetails.externalId' },
       { id: 'deviceExternalDetails.externalType', label: 'External type', value: 'deviceExternalDetails.externalType' },
-      { id: 'c8y_Notes', label: 'Notes', value: 'c8y_Notes'},
-      { id: 'type', label: 'Type', value: 'type'},
-      { id: 'c8y_CommunicationMode.mode', label: 'Communication Mode', value: 'c8y_CommunicationMode.mode'},
-      { id: 'c8y_Hardware.model', label: 'Hardware Model', value: 'c8y_Hardware.model'},
-      { id: 'c8y_ActiveAlarmsStatus', label: 'Active alarms status', value: 'c8y_ActiveAlarmsStatus'},
+      { id: 'c8y_Notes', label: 'Notes', value: 'c8y_Notes' },
+      { id: 'type', label: 'Type', value: 'type' },
+      { id: 'c8y_CommunicationMode.mode', label: 'Communication Mode', value: 'c8y_CommunicationMode.mode' },
+      { id: 'c8y_Hardware.model', label: 'Hardware Model', value: 'c8y_Hardware.model' },
+      { id: 'c8y_ActiveAlarmsStatus', label: 'Active alarms status', value: 'c8y_ActiveAlarmsStatus' },
       { id: 'other', label: 'Other', value: 'other' }
     ];
     if (!this.config.fpProps) {
@@ -189,9 +189,9 @@ export class GpAssetViewerConfigComponent implements OnInit, DoCheck {
       }
     }
     if (!this.config.selectedInputs) {
-      this.config.selectedInputs = ['id', 'name', 'deviceExternalDetails.externalId', 'lastUpdated','c8y_Availability.status', 'c8y_ActiveAlarmsStatus'];
+      this.config.selectedInputs = ['id', 'name', 'deviceExternalDetails.externalId', 'lastUpdated', 'c8y_Availability.status', 'c8y_ActiveAlarmsStatus'];
     }
-    if(this.config.selectedInputs && this.config.selectedInputs.indexOf('other') !== -1) {
+    if (this.config.selectedInputs && this.config.selectedInputs.indexOf('other') !== -1) {
       this.otherPropList = true;
     }
     this.p1Props = this.fb.group({
@@ -323,11 +323,11 @@ export class GpAssetViewerConfigComponent implements OnInit, DoCheck {
   getDeviceProperties(id: any) {
     // tslint:disable-next-line:variable-name
     let queryString: any;
-      if (this.config.displayMode === 'Devices') {
-        queryString = 'has(c8y_IsDevice)'
-      } else if(this.config.displayMode === 'Assets') {
-        queryString = 'has(c8y_IsAsset)'
-      } 
+    if (this.config.displayMode === 'Devices') {
+      queryString = 'has(c8y_IsDevice)'
+    } else if (this.config.displayMode === 'Assets') {
+      queryString = 'has(c8y_IsAsset)'
+    }
     const _this = this;
     const filter: object = {
       pageSize: 100,
@@ -435,14 +435,14 @@ export class GpAssetViewerConfigComponent implements OnInit, DoCheck {
     }
   }
 
-  removeProperty(i){
+  removeProperty(i) {
     if (this.config.otherPropList.length > 1) {
-      this.config.otherPropList.splice(i,1);
+      this.config.otherPropList.splice(i, 1);
     }
   }
 
-  addProperty(){
-    this.config.otherPropList.push({label: '', value: ''});
+  addProperty() {
+    this.config.otherPropList.push({ label: '', value: '' });
   }
-  
+
 }

@@ -169,7 +169,8 @@
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
         <td mat-cell *matCellDef="let row">
-          <span class="asset-overview-fake-link" title="{{row.id}}" (click)="navigateURL( row.id, row.type)">{{row.id}}</span>
+          <span class="asset-overview-fake-link" title="{{row.id}}"
+            (click)="navigateURL( row.id, row.type)">{{row.id}}</span>
         </td>
       </ng-container>
 
@@ -210,7 +211,8 @@
 
       <ng-container matColumnDef="c8y_Firmware.versionIssuesName">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Firmware Issues Name </th>
-        <td mat-cell *matCellDef="let row" title="{{row.firmwareVersionIssuesName}}"> {{row.firmwareVersionIssuesName}} </td>
+        <td mat-cell *matCellDef="let row" title="{{row.firmwareVersionIssuesName}}"> {{row.firmwareVersionIssuesName}}
+        </td>
       </ng-container>
 
       <ng-container matColumnDef="c8y_RequiredAvailability.responseInterval">
@@ -230,12 +232,14 @@
 
       <ng-container matColumnDef="lastUpdated">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Updated </th>
-        <td mat-cell *matCellDef="let row" title="{{row.lastUpdated | date:'d MMMM yyyy HH:mm'}}"> {{row.lastUpdated | date:'d MMMM yyyy HH:mm'}} </td>
+        <td mat-cell *matCellDef="let row" title="{{row.lastUpdated | date:'d MMMM yyyy HH:mm'}}"> {{row.lastUpdated |
+          date:'d MMMM yyyy HH:mm'}} </td>
       </ng-container>
 
       <ng-container matColumnDef="creationTime">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Creation Time </th>
-        <td mat-cell *matCellDef="let row" title="{{row.creationTime | date:'d MMMM yyyy HH:mm'}}"> {{row.creationTime | date:'d MMMM yyyy HH:mm'}} </td>
+        <td mat-cell *matCellDef="let row" title="{{row.creationTime | date:'d MMMM yyyy HH:mm'}}"> {{row.creationTime |
+          date:'d MMMM yyyy HH:mm'}} </td>
       </ng-container>
 
       <ng-container matColumnDef="c8y_Availability.status">

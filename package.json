@@ -1,7 +1,7 @@
 {
   "name": "cumulocity-asset-viewer-widget-plugin",
   "version": "1.0.1-beta",
-  "description": "This is the Cumulocity module federation plugin. The Asset Viewer Widget plugin help you to display asset/device data in Tile/List view, along with navigation to template dashboards(App Builder only).",
+  "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards(App Builder only).",
   "scripts": {
     "start": "c8ycli server --env.beta=true",
     "build": "c8ycli build --env.mode=production",
@@ -55,9 +55,10 @@
   "c8y": {
     "application": {
       "name": "Cumulocity Asset Viewer Widget Plugin",
+      "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards(App Builder only).",
       "contextPath": "asset-viewer-runtime-widget",
       "key": "asset-viewer-runtime-widget-application-key",
-      "globalTitle": "Cumulocity Asset Viewer Widget Plugin with Module Federation",
+      "globalTitle": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards(App Builder only).",
       "tabsHorizontal": true,
       "isPackage": true,
       "noAppSwitcher": true,

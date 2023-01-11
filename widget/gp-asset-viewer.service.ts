@@ -28,12 +28,12 @@ export class GpAssetViewerService {
   constructor(private inventoryService: InventoryService, private inventoryBinaryService: InventoryBinaryService,
     private alarmService: AlarmService) { }
 
-  async getDeviceList(DeviceGroup: any, pageSize: any, currentPage: any, onlyChildDevice: boolean,deviceType) {
+  async getDeviceList(DeviceGroup: any, pageSize: any, currentPage: any, onlyChildDevice: boolean, deviceType) {
     let queryString = '';
-    if(deviceType === 'Assets') {
-        queryString = 'has(c8y_IsAsset)'
+    if (deviceType === 'Assets') {
+      queryString = 'has(c8y_IsAsset)'
     } else if (deviceType === 'Devices') {
-        queryString = 'has(c8y_IsDevice)'
+      queryString = 'has(c8y_IsDevice)'
     }
     let response: any = null;
     const filter: object = {
@@ -129,55 +129,55 @@ export class GpAssetViewerService {
 
     return alarmCount;
   }
-  
-   /**
-   * This service will recursively get all the child devices for the given device id and return a promise with the result list.
-   *
-   * @param id ID of the managed object to check for child devices
-   * @param pageToGet Number of the page passed to the API
-   * @param allDevices Child Devices already found
-   * @param display
-   */
-    getChildDevices(id: string, pageToGet: number, allDevices: { data: any[], res: any },displayMode): Promise<IResultList<IManagedObject>> {
-      let queryString = '';
-      if (displayMode === 'Devices') {
-        queryString = 'has(c8y_IsDevice)'
-      } else if(displayMode === 'Assets') {
-        queryString = 'has(c8y_IsAsset)'
-      } 
-      const inventoryFilter = {
-        // fragmentType: 'c8y_IsDevice',
-        pageSize: 50,
-        withTotalPages: true,
-        query: (queryString ? queryString : ''),
-        currentPage: pageToGet
-      };
-      if (!allDevices) {
-        allDevices = { data: [], res: null };
-      }
-      return new Promise(
-        (resolve, reject) => {
-          this.inventoryService.childAssetsList(id, inventoryFilter)
-            .then((resp) => {
-              if (resp.res.status === 200) {
-                if (resp.data && resp.data.length >= 0) {
-                  allDevices.data.push.apply(allDevices.data, resp.data);
-                  // suppose that if # of devices is less that the page size, then all devices have already been retrieved
-                  if (resp.data.length < inventoryFilter.pageSize) {
-                    resolve(allDevices);
-                  } else {
-                    this.getChildDevices(id, resp.paging.nextPage, allDevices,displayMode)
-                      .then((np) => {
-                        resolve(allDevices);
-                      })
-                      .catch((err) => reject(err));
-                  }
-                }
-                // resolve(resp);
-              } else {
-                reject(resp);
-              }
-            });
-        });
+
+  /**
+  * This service will recursively get all the child devices for the given device id and return a promise with the result list.
+  *
+  * @param id ID of the managed object to check for child devices
+  * @param pageToGet Number of the page passed to the API
+  * @param allDevices Child Devices already found
+  * @param display
+  */
+  getChildDevices(id: string, pageToGet: number, allDevices: { data: any[], res: any }, displayMode): Promise<IResultList<IManagedObject>> {
+    let queryString = '';
+    if (displayMode === 'Devices') {
+      queryString = 'has(c8y_IsDevice)'
+    } else if (displayMode === 'Assets') {
+      queryString = 'has(c8y_IsAsset)'
     }
+    const inventoryFilter = {
+      // fragmentType: 'c8y_IsDevice',
+      pageSize: 50,
+      withTotalPages: true,
+      query: (queryString ? queryString : ''),
+      currentPage: pageToGet
+    };
+    if (!allDevices) {
+      allDevices = { data: [], res: null };
+    }
+    return new Promise(
+      (resolve, reject) => {
+        this.inventoryService.childAssetsList(id, inventoryFilter)
+          .then((resp) => {
+            if (resp.res.status === 200) {
+              if (resp.data && resp.data.length >= 0) {
+                allDevices.data.push.apply(allDevices.data, resp.data);
+                // suppose that if # of devices is less that the page size, then all devices have already been retrieved
+                if (resp.data.length < inventoryFilter.pageSize) {
+                  resolve(allDevices);
+                } else {
+                  this.getChildDevices(id, resp.paging.nextPage, allDevices, displayMode)
+                    .then((np) => {
+                      resolve(allDevices);
+                    })
+                    .catch((err) => reject(err));
+                }
+              }
+              // resolve(resp);
+            } else {
+              reject(resp);
+            }
+          });
+      });
+  }
 }

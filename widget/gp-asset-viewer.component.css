@@ -303,7 +303,7 @@
 
 .device-list-table {
   width: 100%;
-  background-color: var(--table-background,var(--component-background,var(--root-component-background,#fff)));
+  background-color: var(--table-background, var(--component-background, var(--root-component-background, #fff)));
   table-layout: fixed;
 }
 
@@ -316,8 +316,8 @@
   width: 100px;
   padding-right: 10px;
   white-space: normal;
-  color: var(--component-color,var(--root-component-color,var(--gray-text,#000)));
-  border-bottom-color: var(--table-border,var(--component-border,var(--root-component-border,rgba(0,0,0,0.1))));
+  color: var(--component-color, var(--root-component-color, var(--gray-text, #000)));
+  border-bottom-color: var(--table-border, var(--component-border, var(--root-component-border, rgba(0, 0, 0, 0.1))));
 }
 
 .gp-device-list .refresh-button {
@@ -377,5 +377,5 @@
 }
 
 .btnTheme {
-  color: var(--component-color,var(--root-component-color,var(--gray-text,#000)));
+  color: var(--component-color, var(--root-component-color, var(--gray-text, #000)));
 }
