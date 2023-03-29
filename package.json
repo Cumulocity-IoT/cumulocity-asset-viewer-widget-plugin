@@ -1,16 +1,18 @@
 {
   "name": "cumulocity-asset-viewer-widget-plugin",
-  "version": "1.0.2-beta",
-  "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards(App Builder only).",
+  "version": "1.0.2",
+  "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
   "scripts": {
     "start": "c8ycli server",
-    "build": "c8ycli build",
+    "build": "c8ycli build --env.mode=production",
     "deploy": "c8ycli deploy",
     "postinstall": "ngcc",
     "prebuild": " gulp clean",
     "postbuild": " gulp bundle"
   },
-  "keywords": [],
+  "keywords": ["Cumulocity",
+  "Plugin",
+  "Widget"],
   "author": "Darpankumar Lalani - Software AG, Global Presales",
   "license": "Apache-2.0",
   "dependencies": {
@@ -54,11 +56,11 @@
   },
   "c8y": {
     "application": {
-      "name": "Cumulocity Asset Viewer Widget Plugin",
-      "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards(App Builder only).",
-      "contextPath": "asset-viewer-runtime-widget",
-      "key": "asset-viewer-runtime-widget-application-key",
-      "globalTitle": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards(App Builder only).",
+      "name": "Asset Viewer Widget",
+      "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
+      "contextPath": "sag-ps-pkg-asset-viewer",
+      "key": "sag-ps-pkg-asset-viewer-application-key",
+      "globalTitle": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
       "tabsHorizontal": true,
       "isPackage": true,
       "noAppSwitcher": true,
@@ -69,10 +71,10 @@
       },
       "exports": [
         {
-          "name": "Cumulocity Asset Viewer Widget Plugin",
+          "name": "Asset Viewer Widget",
           "module": "GpAssetViewerModule",
           "path": "./widget/gp-asset-viewer.module.ts",
-          "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards(App Builder only)."
+          "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards."
         }
       ],
       "remotes": {

@@ -1,15 +1,13 @@
-# Cumulocity Asset Viewer Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-asset-viewer-widget-plugin/releases/download/1.0.2-beta/asset-viewer-runtime-widget-1.0.2-beta.zip)
+# Cumulocity Asset Viewer Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-asset-viewer-widget-plugin/releases/download/1.0.2/sag-ps-pkg-asset-viewer-1.0.2.zip)
 
 The Asset Viewer Widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit.
-The Cumulocity Asset Viewer Widget help you to display assets/devices data in Tile/Grid view, along with navigation to template dashboards(App Builder only). This widget plugin also supports various features such as display child devices/assets, configuration of fields/columns, search, display only assets/devices where attentions required, server side pagination, etc.
-
-### Please note that this plugin is in currently under BETA mode.
+The Cumulocity Asset Viewer Widget help you to display assets/devices data in Tile/Grid view, along with navigation to template dashboards. This widget plugin also supports various features such as display child devices/assets, configuration of fields/columns, search, display only assets/devices where attentions required, server side pagination, etc.
 
 ### Please choose Asset Viewer Widget release based on Cumulocity/Application builder version:
 
 |APPLICATION BUILDER | CUMULOCITY | ASSET VIEWER WIDGET PLUGIN  |
 |--------------------|------------|-----------------------------|
-| 2.x.x(coming soon) | >= 1016.x.x| 1.x.x                       |
+| 2.0.x              | >= 1016.x.x| 1.x.x                       |
 
 ![Asset-Viewer](https://user-images.githubusercontent.com/99970126/169486721-aae8ec50-4eb5-4ae6-ae99-b2da57240e2e.jpg)
 ## Features
@@ -34,7 +32,7 @@ The Cumulocity Asset Viewer Widget help you to display assets/devices data in Ti
 
 ### Runtime Widget Deployment?
 
-* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-asset-viewer-widget-plugin/releases/download/1.0.2-beta/asset-viewer-runtime-widget-1.0.2-beta.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages 
+* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-asset-viewer-widget-plugin/releases/download/1.0.2/sag-ps-pkg-asset-viewer-1.0.2.zip) and install via Administrations --> Ecosystems --> Applications --> Packages 
 
 ## QuickStart
 
