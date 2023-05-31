@@ -81,7 +81,17 @@
         "widget-plugin": [
           "GpAssetViewerModule"
         ]
-      }
+      },
+      "copy": [
+        {
+          "from": "Images/Asset-viewer.PNG",
+          "to": "Images/Asset-viewer.PNG"
+        },
+        {
+          "from": "LICENSE",
+          "to": "LICENSE.txt"
+        }
+      ]
     },
     "cli": {}
   },
