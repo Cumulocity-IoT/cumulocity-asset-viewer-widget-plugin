@@ -10,11 +10,9 @@
     "prebuild": " gulp clean",
     "postbuild": " gulp bundle"
   },
-  "keywords": [
-    "Cumulocity",
-    "Plugin",
-    "Widget"
-  ],
+  "keywords": ["Cumulocity",
+  "Plugin",
+  "Widget"],
   "author": "Darpankumar Lalani - Software AG, Global Presales",
   "license": "Apache-2.0",
   "dependencies": {
