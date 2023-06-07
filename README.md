@@ -9,7 +9,7 @@ The Cumulocity Asset Viewer Widget help you to display assets/devices data in Ti
 |--------------------|------------|-----------------------------|
 | 2.0.x              | >= 1016.x.x| 1.x.x                       |
 
-![Asset-Viewer](Images/Asset-viewer.PNG)
+![Asset-Viewer](https://user-images.githubusercontent.com/99970126/169486721-aae8ec50-4eb5-4ae6-ae99-b2da57240e2e.jpg)
 ## Features
   
 *  **Display Assets/Devices:** Displays Assets/Devices for give group in Tile/Grid mode. It also supports child devices/assets.
