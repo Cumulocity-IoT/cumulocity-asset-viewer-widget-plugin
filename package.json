@@ -1,6 +1,6 @@
 {
   "name": "cumulocity-asset-viewer-widget-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
   "scripts": {
     "start": "c8ycli server",
@@ -10,9 +10,11 @@
     "prebuild": " gulp clean",
     "postbuild": " gulp bundle"
   },
-  "keywords": ["Cumulocity",
-  "Plugin",
-  "Widget"],
+  "keywords": [
+    "Cumulocity",
+    "Plugin",
+    "Widget"
+  ],
   "author": "Darpankumar Lalani - Software AG, Global Presales",
   "license": "Apache-2.0",
   "dependencies": {
@@ -52,7 +54,8 @@
     "gulp-zip": "^5.0.1",
     "del": "^6.1.1",
     "html-loader": "4.1.0",
-    "@c8y/cli": "1016.0.40"
+    "@c8y/cli": "1016.0.40",
+    "style-loader": "3.3.1"
   },
   "c8y": {
     "application": {
