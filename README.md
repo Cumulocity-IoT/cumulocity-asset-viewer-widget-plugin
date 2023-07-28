@@ -10,7 +10,7 @@ The Cumulocity Asset Viewer Widget help you to display assets/devices data in Ti
 |--------------------|------------|-----------------------------|
 | 2.0.x              | >= 1016.x.x| 1.x.x                       |
 
-![Asset-Viewer](widget\images\Asset-viewer.PNG)
+![Asset-Viewer](widget/images/Asset-viewer.PNG)
 
 ## Features
   
