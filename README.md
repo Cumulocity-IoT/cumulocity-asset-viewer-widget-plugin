@@ -4,8 +4,8 @@ The Asset Viewer Widget is the Cumulocity module federation plugin created using
 The Cumulocity Asset Viewer Widget help you to display assets/devices data in Tile/Grid view, along with navigation to template dashboards. This widget plugin also supports various features such as display child devices/assets, configuration of fields/columns, search, display only assets/devices where attentions required, server side pagination, etc.
 
 ### Please choose Asset Viewer Widget release based on Cumulocity/Application builder version:
-
-|APPLICATION BUILDER | CUMULOCITY | ASSET VIEWER WIDGET PLUGIN  |
+|
+|APPLICATION BUILDER&nbsp; |&nbsp; CUMULOCITY&nbsp; |&nbsp; ASSET VIEWER WIDGET PLUGIN &nbsp; |
 |--------------------|------------|-----------------------------|
 | 2.0.x              | >= 1016.x.x| 1.x.x                       |
 
