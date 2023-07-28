@@ -599,7 +599,7 @@ export class GpAssetViewerComponent implements OnInit, OnDestroy {
     }
 
     if (!image && this.defaultImageId) {
-      this.sanitizer.bypassSecurityTrustResourceUrl(this.defaultImageURL);
+      return this.sanitizer.bypassSecurityTrustResourceUrl(this.defaultImageURL);
     }
 
     // if content of image variable is a number it is assumed it is a binary id
