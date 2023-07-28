@@ -86,8 +86,8 @@
       },
       "copy": [
         {
-          "from": "images/asset-viewer.png",
-          "to": "images/asset-viewer.png"
+          "from": "images/Asset-viewer.png",
+          "to": "images/Asset-viewer.png"
         },
         {
           "from": "LICENSE",
