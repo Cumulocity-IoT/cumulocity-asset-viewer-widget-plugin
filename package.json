@@ -86,8 +86,8 @@
       },
       "copy": [
         {
-          "from": "images/asset-viewer.png",
-          "to": "images/asset-viewer.png"
+          "from": "images/Asset-viewer.PNG",
+          "to": "images/Asset-viewer.PNG"
         },
         {
           "from": "LICENSE",
@@ -95,7 +95,6 @@
         }
       ]
     },
-    
     "cli": {}
   },
   "browserslist": [
