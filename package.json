@@ -88,8 +88,8 @@
       },
       "copy": [
         {
-          "from": "images/Asset-viewer.PNG",
-          "to": "images/Asset-viewer.PNG"
+          "from": "widget/images/Asset-viewer.PNG",
+          "to": "widget/images/Asset-viewer.PNG"
         },
         {
           "from": "LICENSE",
