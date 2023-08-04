@@ -241,6 +241,37 @@
   background-color: #1c8ce3;
 }
 
+.criticalClog {
+  font-weight: bold;
+  color: #e0000e;
+}
+
+.severeClog {
+  color: #e66400;
+  font-weight: bold;
+}
+
+.warningClog {
+  color: #c9cd17e0;
+  font-weight: bold;
+}
+
+.criticalClog2 {
+  border: 7px solid #e0000e;
+}
+
+.severeClog2 {
+  border: 7px solid #e66400;
+}
+
+.warningClog2 {
+  border: 7px solid #c9cd17e0;
+}
+
+.healthyClog2 {
+  border: 2px solid #e0dfef87;;
+}
+
 .criticalAlerts2 {
   color: #e0000e;
 }

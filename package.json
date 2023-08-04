@@ -1,7 +1,7 @@
 {
-  "name": "cumulocity-asset-viewer-widget-plugin",
-  "version": "1.0.4",
-  "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
+  "name": "cumulocity-asset-viewer-upgraded-widget-plugin",
+  "version": "1.0.9",
+  "description": "The Asset Viewer Upgrade Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
   "scripts": {
     "start": "c8ycli server",
     "build": "c8ycli build --env.mode=production",
@@ -59,11 +59,11 @@
   },
   "c8y": {
     "application": {
-      "name": "Asset Viewer Widget",
-      "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
-      "contextPath": "sag-ps-pkg-asset-viewer",
-      "key": "sag-ps-pkg-asset-viewer-application-key",
-      "globalTitle": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
+      "name": "Asset Viewer Widget Upgraded",
+      "description": "The Asset Viewer Upgraded Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
+      "contextPath": "sag-ps-pkg-asset-viewer-upgrade",
+      "key": "sag-ps-pkg-asset-viewer-upgraded-application-key",
+      "globalTitle": "The Asset Viewer Upgraded Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
       "tabsHorizontal": true,
       "isPackage": true,
       "noAppSwitcher": true,
@@ -74,10 +74,10 @@
       },
       "exports": [
         {
-          "name": "Asset Viewer Widget",
+          "name": "Asset Viewer Widget Upgraded",
           "module": "GpAssetViewerModule",
           "path": "./widget/gp-asset-viewer.module.ts",
-          "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards."
+          "description": "The Asset Viewer Upgraded Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards."
         }
       ],
       "remotes": {

@@ -51,10 +51,10 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
       provide: HOOK_COMPONENTS,
       multi: true,
       useValue: {
-        id: 'asset-viewer-widget',
-        label: 'Asset Viewer',
+        id: 'asset-viewer-widget-upgraded',
+        label: 'Asset Viewer Upgraded',
         previewImage: preview.previewImage,
-        description: 'The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.',
+        description: 'The Asset Viewer Upgraded Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.',
         component: GpAssetViewerComponent,
         configComponent: GpAssetViewerConfigComponent,
         data: {

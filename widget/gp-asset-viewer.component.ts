@@ -677,6 +677,51 @@ export class GpAssetViewerComponent implements OnInit, OnDestroy {
     return '';
   }
 
+  isClogStateColorsDash(state) {
+    if (state) {
+      if (state == 4) {
+        return 'criticalClog2';
+      } else if (state == 3) {
+        return 'severeClog2';
+      } else if (state == 2) {
+        return 'warningClog2';
+      } else {
+        return 'healthyClog2';
+      }
+    }
+    return 'healthyClog2';
+  }
+
+  isclogStateTextColor(state) {
+    if (state) {
+      if (state == 4) {
+        return 'criticalClog';
+      } else if (state == 3) {
+        return 'severeClog';
+      } else if (state == 2) {
+        return 'warningClog';
+      } else {
+        return '';
+      }
+    }
+    return '';
+  }
+
+  isclogStateMApText(state) {
+    if (state) {
+      if (state == 4) {
+        return 'Critical';
+      } else if (state == 3) {
+        return 'Severe';
+      } else if (state == 2) {
+        return 'Warning';
+      } else {
+        return 'Healthy';
+      }
+    }
+    return '';
+  }
+
   isAlertsBGColor(alarm) {
     if (alarm) {
       if (alarm.critical && alarm.critical > 0) {
