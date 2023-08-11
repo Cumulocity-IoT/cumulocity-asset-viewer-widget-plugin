@@ -616,7 +616,7 @@ export class GpAssetViewerComponent implements OnInit, OnDestroy {
   // Navigate URL to dashboard if dashboard is exist
   navigateURL(deviceId: string, deviceType: string) {
     if (deviceType && this.appId) {
-      const dashboardObj = this.configDashboardList.find((dashboard) => dashboard.type === deviceType);
+      const dashboardObj = this.configDashboardList.find((dashboard) => dashboard.type === deviceType || dashboard.type === 'All');
       if (dashboardObj && dashboardObj.templateID) {
         if (dashboardObj.withTabGroup) {
           this.router.navigate([
