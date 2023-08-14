@@ -379,3 +379,7 @@
 .btnTheme {
   color: var(--component-color, var(--root-component-color, var(--gray-text, #000)));
 }
+
+:host ::ng-deep .page-link{
+  height:  32px;
+}
