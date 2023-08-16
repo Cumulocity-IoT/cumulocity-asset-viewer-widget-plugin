@@ -1,6 +1,6 @@
 {
   "name": "cumulocity-asset-viewer-widget-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The Asset Viewer Widget help you to display asset/device data in Tile/List view, along with navigation to template dashboards.",
   "scripts": {
     "start": "c8ycli server",
