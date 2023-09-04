@@ -1,4 +1,4 @@
-# Cumulocity Asset Viewer Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-asset-viewer-widget-plugin/releases/download/1.0.6/sag-ps-pkg-asset-viewer-1.0.6.zip)
+# Cumulocity Asset Viewer Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-asset-viewer-widget-plugin/releases/download/1.0.5/sag-ps-pkg-asset-viewer-1.0.5.zip)
 
 The Asset Viewer Widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit.
 The Cumulocity Asset Viewer Widget help you to display assets/devices data in Tile/Grid view, along with navigation to template dashboards. This widget plugin also supports various features such as display child devices/assets, configuration of fields/columns, search, display only assets/devices where attentions required, server side pagination, etc.
@@ -34,7 +34,7 @@ The Cumulocity Asset Viewer Widget help you to display assets/devices data in Ti
 
 ### Runtime Widget Deployment?
 
-* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-asset-viewer-widget-plugin/releases/download/1.0.6/sag-ps-pkg-asset-viewer-1.0.6.zip) and install via Administrations --> Ecosystems --> Applications --> Packages 
+* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-asset-viewer-widget-plugin/releases/download/1.0.5/sag-ps-pkg-asset-viewer-1.0.5.zip) and install via Administrations --> Ecosystems --> Applications --> Packages 
 
 ## QuickStart
 
